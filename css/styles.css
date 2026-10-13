@@ -10,6 +10,29 @@
     font-weight: 500;
     font-style: normal;
 }
-ul {
-    list-style: ;
+.numeri {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+@keyframes animazione {
+    50% {transform: rotate(360deg);}
+}
+
+@keyframes ingradimento {
+    50% {transform:scale(140%)}
+}
+
+.bott:hover {
+    animation: animazione 5s;
+}
+
+@media (max-width: 576px) {
+    .sparisci {
+        display: none;
+    }
+    .grande {
+        animation: ingradimento 5s;
+    }
 }
